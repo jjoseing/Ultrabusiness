@@ -1,0 +1,8 @@
+com\mycompany\ultra\modelo\Detalleventa.class
+com\mycompany\ultra\dao\PersonaDaoImpl.class
+com\mycompany\ultra\modelo\Venta.class
+com\mycompany\ultra\HibernateConfiguration.class
+com\mycompany\ultra\dao\PersonaDaoI.class
+com\mycompany\ultra\modelo\Persona.class
+com\mycompany\ultra\SysDataAccess.class
+com\mycompany\ultra\modelo\Producto.class
