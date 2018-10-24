@@ -67,9 +67,10 @@
                   <th scope="row">1</th>
                   <td>${dato.nombres}</td>
                   <td>${dato.apellidos}</td>
-                  <td>${dato.telefono}</td>                
-                  <td>${dato.dni}</td>
+                  <td>${dato.telefono}</td>6
                   <td>${dato.email}</td>
+                  <td>${dato.dni}</td>
+                  
                   <td><a href="${pageContext.request.contextPath}/elim?id=${dato.idPersona}">E</a></td>
                 </tr>
         </c:forEach> 

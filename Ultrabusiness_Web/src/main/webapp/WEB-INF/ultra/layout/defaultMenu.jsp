@@ -1,4 +1,4 @@
-<aside class="main-sidebar">
+<!--<aside class="main-sidebar">-->
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
@@ -27,7 +27,7 @@
         <li class="header">MAIN NAVIGATION</li>
         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Principal</span>
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -36,8 +36,8 @@
                     <li class="active"><a href="${pageContext.request.contextPath}/"><i class="fa fa-circle-o"></i> Home</a></li>                                        
                     <li ><a href="${pageContext.request.contextPath}/pru1"><i class="fa fa-circle-o"></i> productos</a></li>
                     <li ><a href="${pageContext.request.contextPath}/pru2"><i class="fa fa-circle-o"></i> Ingresar una venta</a></li>
-                    <li ><a href="${pageContext.request.contextPath}/pers"><i class="fa fa-circle-o"></i> Registro de venta</a></li>
-                      <li ><a href="${pageContext.request.contextPath}/pers"><i class="fa fa-circle-o"></i> Cliente</a></li>
+                    <li ><a href="${pageContext.request.contextPath}/pru3"><i class="fa fa-circle-o"></i> Registro de venta</a></li>
+                    <li ><a href="${pageContext.request.contextPath}/pers"><i class="fa fa-circle-o"></i> Cliente</a></li>
                     <li ><a href="${pageContext.request.contextPath}/report"><i class="fa fa-circle-o"></i> Reporte cliente</a></li>   
           </ul>
         </li>
@@ -50,4 +50,4 @@
       </ul>
     </section>
     <!-- /.sidebar -->
-  </aside>
+<!--  </aside>-->

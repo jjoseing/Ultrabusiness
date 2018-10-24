@@ -25,7 +25,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  *
  * @author Juan Jose
  */
-@ComponentScan("pe.edu.jose.ultra")
+@ComponentScan("com.mycompany.ultra")
 @Configuration
 @EnableTransactionManagement
 @PropertySource("classpath:application.properties")

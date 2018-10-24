@@ -62,6 +62,11 @@ public ModelAndView inicioDos(){
     return new ModelAndView("Prueba3");
 }
 
+@RequestMapping(value = {"/pru3" }, method = RequestMethod.GET)    
+public ModelAndView inicioTres(){
+    
+    return new ModelAndView("Prueba4");
+}
 @RequestMapping(value = {"/pers" }, method = RequestMethod.GET)    
 public ModelAndView mainPersona(){    
     return new ModelAndView("persona/registro");
@@ -80,7 +85,7 @@ return new ModelAndView(new RedirectView("/"));
   
 @RequestMapping(value = {"/buscar"}, method = RequestMethod.POST)
 public  ModelAndView buscarEntidad(Locale locale, Map<String,Object> model, HttpServletRequest r){
-    String welcome=messageSource.getMessage("welcome.message", new Object[]{"David Mamani"}, locale);
+    String welcome=messageSource.getMessage("welcome.message", new Object[]{"Jose Cama"}, locale);
     String dato=r.getParameter("dato");
     List<Persona> lista=personaServicioI.listarEntidad();
     model.put("ListaPersona", lista);

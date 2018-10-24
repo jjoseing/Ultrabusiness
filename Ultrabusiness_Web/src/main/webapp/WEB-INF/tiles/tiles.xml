@@ -6,12 +6,12 @@
   
    <!-- Base Definition -->
    <definition name="base-definition"
-       template="/WEB-INF/upeu/layout/defaultLayout.jsp">  
-       <put-attribute name="title" value="Academico" />  
-       <put-attribute name="header" value="/WEB-INF/upeu/layout/defaultHeader.jsp" />  
-       <put-attribute name="menu" value="/WEB-INF/upeu/layout/defaultMenu.jsp" />  
+       template="/WEB-INF/ultra/layout/defaultLayout.jsp">  
+       <put-attribute name="title" value="Ultra" />  
+       <put-attribute name="header" value="/WEB-INF/ultra/layout/defaultHeader.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/ultra/layout/defaultMenu.jsp" />  
        <put-attribute name="body" value="" />  
-       <put-attribute name="footer" value="/WEB-INF/upeu/layout/defaultFooter.jsp" />  
+       <put-attribute name="footer" value="/WEB-INF/ultra/layout/defaultFooter.jsp" />  
 		<put-list-attribute name="stylesheets">
 			<add-attribute value="/webjars/AdminLTE/2.4.2/bower_components/bootstrap/dist/css/bootstrap.min.css" />
                         <add-attribute value="/webjars/AdminLTE/2.4.2/bower_components/font-awesome/css/font-awesome.min.css" />
@@ -61,17 +61,20 @@
    </definition>  
   
    <definition name="*" extends="base-definition">
-       <put-attribute name="body" value="/WEB-INF/upeu/modulos/{1}.jsp" />  
+       <put-attribute name="body" value="/WEB-INF/ultra/modulos/{1}.jsp" />  
    </definition>
    
    <definition name="*/*" extends="base-definition">
-       <put-attribute name="title" value="Academico Nivel 2" />  
-       <put-attribute name="body" value="/WEB-INF/upeu/modulos/{1}/{2}.jsp" />  
+       <put-attribute name="title" value="Ultra Nivel 2" />  
+       <put-attribute name="body" value="/WEB-INF/ultra/modulos/{1}/{2}.jsp" />  
    </definition>
    <definition name="*/*/*" extends="base-definition">
-       <put-attribute name="title" value="Academico Nivel 3" />  
-       <put-attribute name="body" value="/WEB-INF/upeu/modulos/{1}/{2}/{3}.jsp" />  
+       <put-attribute name="title" value="Ultra nivel 3" />  
+       <put-attribute name="body" value="/WEB-INF/ultra/modulos/{1}/{2}/{3}.jsp" />  
    </definition>
-
+    <definition name="*/*/*/*" extends="base-definition">
+       <put-attribute name="title" value="Ultra nivel 4" />  
+       <put-attribute name="body" value="/WEB-INF/ultra/modulos/{1}/{2}/{3}/{4}.jsp" />  
+   </definition>
   
 </tiles-definitions>

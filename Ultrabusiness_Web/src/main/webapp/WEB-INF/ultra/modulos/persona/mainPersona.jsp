@@ -69,7 +69,7 @@
                 <c:forEach items="${ListaPersona}" var="dato">
                       <tr>
                         <th >1</th>
-                        <td>${dato.nombre}</td>
+                        <td>${dato.nombres}</td>
                         <td>${dato.apellidos}</td>
                         <td>${dato.dni}</td>
                         <td><a href="${pageContext.request.contextPath}/elim?id=${dato.idPersona}">E</a></td>
