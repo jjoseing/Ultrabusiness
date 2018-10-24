@@ -56,37 +56,30 @@
         <table id="example1" class="table table-bordered table-striped">
           <thead >
             <tr>
-              <th >#</th>
-              <th >Nombre</th>
-              <th >Apellidos</th>
-              <th >telefono</th>
-              <th >email</th>
-              <th >DNI</th>
-              <th >Opciones</th>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellidos</th>
+              <th scope="col">telefono</th>
+              <th scope="col">email</th>
+              <th scope="col">DNI</th>
+              <th scope="col">Opciones</th>
             </tr>
           </thead>
           <tbody>
                 <c:forEach items="${ListaPersona}" var="dato">
                       <tr>
-                        <th >1</th>
+                        
+                        <td>${dato.idPersona}</td>
                         <td>${dato.nombres}</td>
                         <td>${dato.apellidos}</td>
+                        <td>${dato.telefono}</td>
+                        <td>${dato.email}</td>
                         <td>${dato.dni}</td>
                         <td><a href="${pageContext.request.contextPath}/elim?id=${dato.idPersona}">E</a></td>
                       </tr>
               </c:forEach> 
             </tbody>
-            <tfoot>
-                <tr>
-                <th >#</th>
-                <th >Nombre</th>
-                <th >Apellidos</th>
-                <th >telefono</th>
-              <th >email</th>
-              <th >DNI</th>
-              <th >Opciones</th>
-                </tr>
-            </tfoot>            
+              
           </table>  
           </div>
         </div>                                

@@ -27,7 +27,7 @@ import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles3.TilesView;
 
 @Configuration
-@ComponentScan("com.mycompany")
+@ComponentScan("com.mycompany.ultra")
 @EnableWebMvc
 
 public class WebAppConfig extends WebMvcConfigurerAdapter{

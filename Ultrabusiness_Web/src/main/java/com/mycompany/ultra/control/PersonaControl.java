@@ -87,7 +87,7 @@ return new ModelAndView(new RedirectView("/"));
 public  ModelAndView buscarEntidad(Locale locale, Map<String,Object> model, HttpServletRequest r){
     String welcome=messageSource.getMessage("welcome.message", new Object[]{"Jose Cama"}, locale);
     String dato=r.getParameter("dato");
-    List<Persona> lista=personaServicioI.listarEntidad();
+    List<Persona> lista=personaServicioI.listarEntidadDato(dato);
     model.put("ListaPersona", lista);
     model.put("message", welcome);
     model.put("startMeeting", "09:10");    
@@ -102,9 +102,9 @@ return new ModelAndView("persona/formPersona");
 }
 
 @RequestMapping(value = "/guardarPersona", method = RequestMethod.POST)
-public ModelAndView guardarEntidad(@ModelAttribute("modeloPersona")Persona persona,
-        BindingResult result){
-        personaServicioI.guardarEntidad(persona);
+public ModelAndView guardarEntidad(@ModelAttribute("modeloPersona")Persona persona, BindingResult result){
+        personaServicioI.guardarEntidad(persona);       
+        System.out.println("VERR:"+persona.getIdPersona());
     return new ModelAndView(new RedirectView("/"));
 }
 

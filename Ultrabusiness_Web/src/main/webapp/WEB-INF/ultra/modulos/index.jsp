@@ -64,7 +64,7 @@
       <tbody>
           <c:forEach items="${ListaPersona}" var="dato">
                 <tr>
-                  <th scope="row">1</th>
+                  <td>${dato.idPersona}</td>
                   <td>${dato.nombres}</td>
                   <td>${dato.apellidos}</td>
                   <td>${dato.telefono}</td>6

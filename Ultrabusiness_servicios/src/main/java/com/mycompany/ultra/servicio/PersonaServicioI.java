@@ -14,6 +14,7 @@ import com.mycompany.ultra.modelo.Persona;
  */
 public interface PersonaServicioI {
     public List<Persona> listarEntidad();
+    public List<Persona> listarEntidadDato(String dato);
     public Persona buscarEntidadId(int id);
     public void guardarEntidad(Persona persona);
     public void eliminarEntidad(int id);
